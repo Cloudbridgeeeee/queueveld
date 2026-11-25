@@ -77,7 +77,14 @@
 .ui-shot { padding: 32px; display: grid; place-items: center; height: 100%; background: var(--p-surface); }
 .ui-shot > .ui { width: min(100%, 420px); }
 .hero__media--ui { display: grid; align-items: start; }
-@media (max-width: 639px) { .d-row small { display: none; } }
+@media (max-width: 639px) { .hero__proof { display: none; } }
+@media (max-width: 639px) { .d-row small, .d-main__head .d-btn { display: none; } }
+.close__word { line-height: 1.2 !important; overflow: visible !important; }
+.hero--centred .hero__lead { color: var(--ink); }
+.hero--centred .hero__window { overflow: hidden; }
+.d-row .num { color: inherit; }
+@media (max-width: 639px) { .nav__actions .nav__link { display: none; } }
+@media (max-width: 379px) { .nav__logo { font-size: 16px; } .nav__actions .btn { padding: 0 12px; font-size: 14px; } }
 
 </style>
 </head>
@@ -148,9 +155,9 @@
     <div class="closing__links">
       <div class="grid">
         <div class="span-4 stack-4"><a class="nav__logo" href="#top">QueueVeld</a><p class="footer__lede">Appointment capacity planning for hospitals, outpatient clinics and diagnostic centres.</p></div>
-        <div class="span-2 footer__col"><h3>Product</h3><ul><li><a href="#product">Forecasts</a></li><li><a href="#features">Features</a></li><li><a href="/demo/">Demo</a></li></ul></div><div class="span-2 footer__col"><h3>Pilot</h3><ul><li><a href="#how">How it runs</a></li><li><a href="#faq">Questions</a></li></ul></div><div class="span-2 footer__col"><h3>Company</h3><ul><li><a href="#team">Founders</a></li><li><a href="#platform">Platform</a></li></ul></div><div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="#pilot">Request a pilot</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Product</h3><ul><li><a href="#product">Forecasts</a></li><li><a href="#features">Features</a></li><li><a href="/demo/">Demo</a></li></ul></div><div class="span-2 footer__col"><h3>Pilot</h3><ul><li><a href="#how">How it runs</a></li><li><a href="#faq">Questions</a></li></ul></div><div class="span-2 footer__col"><h3>Company</h3><ul><li><a href="#team">Founders</a></li><li><a href="#platform">Platform</a></li></ul></div><div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="#pilot">Request a pilot</a></li><li><a href="/privacy.html">Privacy</a></li><li><a href="/terms.html">Terms</a></li></ul></div>
       </div>
-      <div class="footer__legal"><span>&copy; 2026 QueueVeld &nbsp; <a href="/privacy.html">Privacy</a> &nbsp; <a href="/terms.html">Terms</a></span><div class="socials"></div></div>
+      <div class="footer__legal"><span>&copy; 2026 QueueVeld</span><div class="socials"></div></div>
     </div>
   </div>
 </footer>
