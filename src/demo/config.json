@@ -1,0 +1,205 @@
+{
+  "name": "QueueVeld",
+  "primary": "Request a pilot",
+  "accent": "#a1ffcb",
+  "ink": "#232323",
+  "bg": "#ffffff",
+  "surface": "#f3f3f3",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Chivo:wght@400..700&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Chivo\", system-ui, sans-serif",
+  "fontText": "\"Chivo\", system-ui, sans-serif",
+  "client": "Lagos Island Clinic · sample data",
+  "note": "Sample data for one clinic. Forecasts here come from a fixed model in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Forecast",
+    "records": "Hours",
+    "queue": "Room suggestions"
+  },
+  "overview": {
+    "title": "Monday, general outpatient",
+    "kpis": [
+      [
+        "Expected patients",
+        "176"
+      ],
+      [
+        "Hours over capacity",
+        "3"
+      ],
+      [
+        "Peak expected wait",
+        "38 min"
+      ],
+      [
+        "Rooms open",
+        "5"
+      ]
+    ],
+    "chart": {
+      "title": "Forecast arrivals per hour against capacity",
+      "labels": [
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "values": [
+        12,
+        23,
+        26,
+        22,
+        14,
+        13,
+        19,
+        17,
+        10
+      ],
+      "threshold": 20,
+      "thresholdLabel": "Capacity 20 an hour",
+      "caption": "Bars above the dashed line are hours when more patients are due than five rooms can see."
+    }
+  },
+  "records": {
+    "title": "Forecast hours, next week",
+    "searchHint": "Service or day",
+    "statusCol": 4,
+    "columns": [
+      "Service",
+      "Day",
+      "Hour",
+      "Due",
+      "Status",
+      "Expected wait"
+    ],
+    "tones": {
+      "Over capacity": "bad",
+      "Near capacity": "warn",
+      "On track": "good"
+    },
+    "rows": [
+      [
+        "General outpatient",
+        "Mon",
+        "09:00",
+        "23",
+        "Over capacity",
+        "31 min"
+      ],
+      [
+        "General outpatient",
+        "Mon",
+        "10:00",
+        "26",
+        "Over capacity",
+        "38 min"
+      ],
+      [
+        "General outpatient",
+        "Mon",
+        "11:00",
+        "22",
+        "Over capacity",
+        "27 min"
+      ],
+      [
+        "Antenatal",
+        "Mon",
+        "10:00",
+        "11",
+        "Over capacity",
+        "35 min"
+      ],
+      [
+        "Radiology",
+        "Tue",
+        "14:00",
+        "6",
+        "Near capacity",
+        "21 min"
+      ],
+      [
+        "Laboratory draws",
+        "Tue",
+        "08:00",
+        "24",
+        "On track",
+        "6 min"
+      ],
+      [
+        "General outpatient",
+        "Wed",
+        "10:00",
+        "19",
+        "Near capacity",
+        "18 min"
+      ],
+      [
+        "Antenatal",
+        "Thu",
+        "09:00",
+        "7",
+        "On track",
+        "9 min"
+      ],
+      [
+        "Radiology",
+        "Thu",
+        "10:00",
+        "5",
+        "On track",
+        "12 min"
+      ],
+      [
+        "Laboratory draws",
+        "Fri",
+        "09:00",
+        "21",
+        "On track",
+        "5 min"
+      ],
+      [
+        "General outpatient",
+        "Fri",
+        "15:00",
+        "12",
+        "On track",
+        "4 min"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Room suggestions to review",
+    "lead": "Each suggestion keeps every hour under 90% load. Nothing changes in your booking system.",
+    "items": [
+      {
+        "id": "mon-go",
+        "title": "Open room 6, Monday 09:00 to 12:00",
+        "detail": "General outpatient. Peak expected wait falls from 38 to 14 minutes.",
+        "reason": "Forecast 71 patients in three hours against room for 60."
+      },
+      {
+        "id": "mon-an",
+        "title": "Move four antenatal bookings to Tuesday",
+        "detail": "Antenatal, Monday 10:00. Tuesday has room for six more.",
+        "reason": "Monday 10:00 is forecast at 11 due against room for 9."
+      },
+      {
+        "id": "thu-go",
+        "title": "Release room 3, Thursday afternoon",
+        "detail": "General outpatient. Load stays under 70% with five rooms.",
+        "reason": "Thursday afternoons ran at 52% load over the last 12 weeks."
+      },
+      {
+        "id": "tue-ra",
+        "title": "Send radiology reminders five days ahead",
+        "detail": "Radiology bookings made three or more weeks out.",
+        "reason": "These bookings cancel 26% of the time, mostly in the last week."
+      }
+    ]
+  }
+}

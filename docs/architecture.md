@@ -1,11 +1,11 @@
-# QueueVeld — proposed AWS architecture
+# Proposed AWS architecture
 
 | Stage | Service | Role |
-| --- | --- | --- |
-| Import | Amazon S3 | Encrypted bucket per customer for appointment-history exports (CSV / EHR). |
-| De-identify | AWS Lambda | Strips names, phone numbers and record numbers; validates rows; writes clean data. |
-| Store | Amazon DynamoDB | Services, rooms, sessions, forecasts, recommendations and the decision log. |
-| Forecast | Amazon SageMaker AI | Arrival and cancellation models per service, retrained weekly; error bands from back-testing. |
-| Summarise | Amazon Bedrock | Plain-language weekly summaries that cite the figures used. No booking or clinical decisions. |
+|---|---|---|
+| Import | S3 | Encrypted bucket per facility for appointment exports |
+| De-identify | Lambda | Removes names and record numbers, validates rows |
+| Forecast | SageMaker AI | Arrival and cancellation models, retrained weekly |
+| Summarise | Bedrock | Weekly plain-language summary quoting its figures |
+| Store | DynamoDB | Services, rooms, suggestions, decision log |
 
-Each facility runs in its own AWS account and region. QueueVeld has read-only access to exports and no write access to scheduling systems.
+One AWS account per facility. Read-only access to exports; no write access to scheduling systems.

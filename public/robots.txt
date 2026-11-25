@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /batches
-Sitemap: https://cultivane.site/sitemap.xml

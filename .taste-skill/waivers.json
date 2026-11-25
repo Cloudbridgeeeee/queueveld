@@ -1,0 +1,1 @@
+[{"check": "button-styles", "target": "(the page)", "reason": "The third fill is the kit's own inverse primary on the dealt footer-dark ground (--p-inv-action); same shape, height and label size, so the page keeps one primary look per ground."}]

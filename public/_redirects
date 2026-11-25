@@ -1,2 +1,1 @@
-# Netlify / Cloudflare Pages: serve the single-page app for every route.
-/*  /index.html  200
+/demo/*  /demo/index.html  200

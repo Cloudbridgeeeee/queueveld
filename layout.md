@@ -1,4 +1,3 @@
 # Layout
-Left-aligned, 1200px container, 12-col. Hero: copy left / live day board right.
-Home order: hero → problem stats → features (asymmetric bento) → how it works (4 steps, genuine sequence) → demo teaser → AI + safeguards → AWS architecture → pricing → roadmap → founders → FAQ → pilot form.
-Pages: /product, /how-it-works, /pricing, /about, /security, /contact, /privacy, /terms, /demo/* (overview, forecast, cancellations, capacity), 404.
+
+One section per screen at 1440x900. Plan: hero (collage) · product app-frame (forecast list + calendar) · features bento (5) · principle statement (liquid-type) · pilot pinned-chapters (2 screens) · platform on the dark band (lanes diagram) · pricing · founders · questions · pilot form · footer.closing (close-type, footer-dark).
